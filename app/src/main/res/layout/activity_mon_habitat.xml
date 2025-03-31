@@ -1,0 +1,152 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg">
+
+    <!-- Conteneur principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Barre d'outils (Toolbar) -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/black"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="Mon habitat"
+            app:navigationIcon="@drawable/menu" />
+
+        <!-- Contenu principal sous la Toolbar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mon habitat"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"/>
+
+            <!-- Conteneur horizontal pour l'icône et l'EditText -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <!-- Image du mail -->
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/floor"
+                    app:tint="@android:color/white"/>
+
+                <!-- Espacement de 32dp -->
+                <Space
+                    android:layout_width="32dp"
+                    android:layout_height="1dp" />
+
+                <!-- EditText pour l'étage -->
+                <EditText
+                    android:id="@+id/editTextFloor"
+                    android:layout_width="276dp"
+                    android:layout_height="43dp"
+                    android:ems="10"
+                    android:hint="Etage"
+                    android:inputType="number"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:backgroundTint="@android:color/white"/>
+            </LinearLayout>
+
+            <!-- Conteneur horizontal pour l'icône et l'EditText -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <!-- Image du mail -->
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/area"
+                    app:tint="@android:color/white"/>
+
+                <!-- Espacement de 32dp -->
+                <Space
+                    android:layout_width="32dp"
+                    android:layout_height="1dp" />
+
+                <!-- EditText pour l'étage -->
+                <EditText
+                    android:id="@+id/editTextArea"
+                    android:layout_width="276dp"
+                    android:layout_height="43dp"
+                    android:ems="10"
+                    android:hint="Superficie"
+                    android:inputType="number"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:backgroundTint="@android:color/white"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mes équipements"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"/>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/white"
+                android:textColor="@android:color/holo_blue_dark"
+                android:text="Ajouter un équipement"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/white"
+                android:textColor="@android:color/holo_blue_dark"
+                android:text="Enregistrer les modifications"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Menu NavigationView -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/nav_header"
+        android:background="@android:color/white"/>
+</androidx.drawerlayout.widget.DrawerLayout>

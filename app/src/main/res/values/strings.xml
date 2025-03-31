@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ProjetDevMobile</string>
+    <string name="bienvenue_au_studio_ghibli">Welcome to Ghibli Studio!</string>
+    <string name="se_connecter">Sign up</string>
+    <string name="retour">Back</string>
+    <string name="identifiez_vous">Identify yourself</string>
+    <string name="mot_de_passe_oubli">Forgot password ?</string>
+    <string name="nouveau_sur_studio_ghibli_cr_er_un_compte">New to Ghibli Studio? Create account</string>
+    <string name="ou">OR</string>
+    <string name="mot_de_passe">Password</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="inscrivez_vous">Register yourself</string>
+    <string name="name">Name</string>
+    <string name="d_j_sur_studio_ghibli_se_connecter">Already on Studio Ghibli ? Connect</string>
+    <string name="t_l_phone">Phone</string>
+    <string name="pr_nom">Surname</string>
+    <string name="characters">Characters</string>
+</resources>

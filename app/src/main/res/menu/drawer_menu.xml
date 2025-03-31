@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/profil"
+            android:title="Profil"/>
+
+        <item
+            android:id="@+id/nav_mon_habitat"
+            android:icon="@drawable/house"
+            android:title="Mon habitat"/>
+
+        <item
+            android:id="@+id/nav_habitats"
+            android:icon="@drawable/apartment"
+            android:title="Liste des habitats"/>
+
+        <item
+            android:id="@+id/nav_reservation"
+            android:icon="@drawable/calendar"
+            android:title="Réservations"/>
+
+        <item
+            android:id="@+id/nav_en_savoir_plus"
+            android:icon="@drawable/help"
+            android:title="En savoir plus"/>
+</menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/gradient_bg">
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="189dp"
+        android:layout_height="186dp"
+        app:srcCompat="@drawable/powerhomewhite"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Bouton -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:text="@string/se_connecter"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@android:color/holo_blue_dark" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:text="@string/login"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@android:color/holo_blue_dark" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:text="Habitats"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@android:color/holo_blue_dark" />
+</LinearLayout>

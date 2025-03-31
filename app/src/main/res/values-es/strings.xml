@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TPApp</string>
+    <string name="bienvenue_au_studio_ghibli">¡Bienvenido al Studio Ghibli!</string>
+    <string name="se_connecter">Iniciar sesión</string>
+    <string name="retour">Volver</string>
+    <string name="identifiez_vous">Identifíquese</string>
+    <string name="mot_de_passe_oubli">¿Olvidaste tu contraseña?</string>
+    <string name="nouveau_sur_studio_ghibli_cr_er_un_compte">¿Nuevo en Studio Ghibli? Crear una cuenta</string>
+    <string name="ou">O</string>
+    <string name="mot_de_passe">Contraseña</string>
+    <string name="email">Correo electrónico</string>
+    <string name="login">Registrarse</string>
+    <string name="inscrivez_vous">Regístrate</string>
+    <string name="name">Nombre</string>
+    <string name="d_j_sur_studio_ghibli_se_connecter">¿Ya tienes una cuenta en Studio Ghibli? Inicia sesión</string>
+    <string name="t_l_phone">Teléfono</string>
+    <string name="pr_nom">Apellido</string>
+    <string name="characters">Personajes</string>
+</resources>

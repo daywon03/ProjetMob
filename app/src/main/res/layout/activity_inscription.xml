@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:background="@drawable/gradient_bg">
+
+    <!-- Bouton Retour -->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="@string/retour"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="start"/>
+
+    <!-- Titre Inscrivez-vous -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inscrivez_vous"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Conteneur horizontal pour l'icône et l'EditText -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Image du user -->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/person"
+            app:tint="@android:color/white"/>
+
+        <!-- Espacement de 32dp -->
+        <Space
+            android:layout_width="32dp"
+            android:layout_height="1dp" />
+
+        <!-- EditText pour le nom -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="276dp"
+            android:layout_height="43dp"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"/>
+    </LinearLayout>
+
+    <!-- Conteneur horizontal pour l'icône et l'EditText -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Espacement de 32dp -->
+        <Space
+            android:layout_width="82dp"
+            android:layout_height="1dp" />
+
+        <!-- EditText pour le nom -->
+        <EditText
+            android:id="@+id/editTextSurname"
+            android:layout_width="276dp"
+            android:layout_height="43dp"
+            android:ems="10"
+            android:hint="@string/pr_nom"
+            android:inputType="text"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"/>
+    </LinearLayout>
+
+    <!-- Conteneur horizontal pour l'icône et l'EditText -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Image du mail -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/baseline_mail_outline_24"
+            app:tint="@android:color/white"/>
+
+        <!-- Espacement de 32dp -->
+        <Space
+            android:layout_width="32dp"
+            android:layout_height="1dp" />
+
+        <!-- EditText pour l'email -->
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="276dp"
+            android:layout_height="43dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"/>
+    </LinearLayout>
+
+    <!-- Conteneur horizontal pour l'icône et l'EditText -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Image du cadenas -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/lock"
+            app:tint="@android:color/white"/>
+
+        <!-- Espacement de 32dp -->
+        <Space
+            android:layout_width="32dp"
+            android:layout_height="1dp" />
+
+        <!-- EditText pour le mot de passe -->
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="276dp"
+            android:layout_height="43dp"
+            android:ems="10"
+            android:hint="@string/mot_de_passe"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"/>
+    </LinearLayout>
+
+    <!-- Conteneur horizontal pour l'icône et l'EditText -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Image du téléphone -->
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/phone"
+            app:tint="@android:color/white"/>
+
+        <!-- Espacement de 32dp -->
+        <Space
+            android:layout_width="32dp"
+            android:layout_height="1dp" />
+
+        <!-- Sélecteur de pays -->
+        <Spinner
+            android:id="@+id/spinnerCountryCode"
+            android:layout_width="80dp"
+            android:layout_height="43dp"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"/>
+
+        <!-- EditText pour le mot de passe -->
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="206dp"
+            android:layout_height="43dp"
+            android:ems="10"
+            android:hint="@string/t_l_phone"
+            android:inputType="phone"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"/>
+    </LinearLayout>
+
+    <!-- Bouton S'inscire' -->
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="@string/login"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"/>
+
+    <!-- TextView pour la création de compte -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Déjà sur PowerHome ? Se connecter"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>
