@@ -8,19 +8,17 @@
     android:background="@android:color/holo_green_dark"
     android:gravity="center_vertical">
 
-    <!-- Image (croix ou check) -->
     <ImageView
         android:id="@+id/toastIcon"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginEnd="8dp" />
 
-    <!-- Message -->
     <TextView
         android:id="@+id/toastMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/silver"
         android:textSize="16sp"
         android:textStyle="bold" />
 

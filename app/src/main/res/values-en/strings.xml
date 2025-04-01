@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="signin">Sign in</string>
+    <string name="back">Back</string>
+    <string name="id_yourself">Identify yourself</string>
+    <string name="forgot_pwd">Forgot password ?</string>
+    <string name="or">OR</string>
+    <string name="pwd">Password</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="signup">Register yourself</string>
+    <string name="firstname">Name</string>
+    <string name="phone">Phone</string>
+    <string name="name">Surname</string>
+    <string name="new_on_app">New to PowerHome ? Sign up</string>
+    <string name="pwrhme_description">PowerHome is a mobile app for residents of shared housing that helps manage and reduce their energy consumption. A green points system encourages sustainable habits and prevents overconsumption.</string>
+    <string name="dev_by">Developed by : • Aron DESCARPENTRIES • Damon Ba • Juliette Cournon</string>
+    <string name="profil">Profil</string>
+    <string name="project_context">"Project carried out as part of the mobile development course at IUT Paris Rives de Seine – 2025  "</string>
+    <string name="already_on_pwrhme">Already on PowerHome ? Sign in</string>
+    <string name="save_edits">Save changes</string>
+    <string name="add_stuff">Add a device</string>
+    <string name="my_stuff">My devices</string>
+    <string name="space">Surface area</string>
+    <string name="floor">Floor</string>
+    <string name="my_home">My home</string>
+    <string name="home_list">List of homes</string>
+    <string name="calendar">Calendar</string>
+    <string name="infos">Learn more</string>
+</resources>

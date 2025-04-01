@@ -3,25 +3,25 @@
         <item
             android:id="@+id/nav_profil"
             android:icon="@drawable/profil"
-            android:title="Profil"/>
+            android:title="@string/profil"/>
 
         <item
             android:id="@+id/nav_mon_habitat"
             android:icon="@drawable/house"
-            android:title="Mon habitat"/>
+            android:title="@string/my_home"/>
 
         <item
             android:id="@+id/nav_habitats"
-            android:icon="@drawable/apartment"
-            android:title="Liste des habitats"/>
+            android:icon="@drawable/appartement"
+            android:title="@string/home_list"/>
 
         <item
             android:id="@+id/nav_reservation"
             android:icon="@drawable/calendar"
-            android:title="Réservations"/>
+            android:title="@string/calendar"/>
 
         <item
             android:id="@+id/nav_en_savoir_plus"
             android:icon="@drawable/help"
-            android:title="En savoir plus"/>
+            android:title="@string/infos"/>
 </menu>

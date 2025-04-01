@@ -5,13 +5,11 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:gravity="center_horizontal"
-    android:background="@android:color/black"> <!-- Ajout de la couleur -->
+    android:background="@android:color/black">
 
-    <!-- Image Totoro -->
     <ImageView
         android:layout_width="95dp"
-        android:layout_height="70dp"
-        android:src="@drawable/powerhomewhite"
-        android:scaleType="centerCrop"
-        android:contentDescription="PowerHome"/>
+        android:layout_height="80dp"
+        android:src="@drawable/pwrhme_white"
+        android:scaleType="centerCrop"/>
 </LinearLayout>

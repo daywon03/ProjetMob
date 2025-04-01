@@ -4,15 +4,13 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_bg">
+    android:background="@drawable/bckgrnd_pwrhme">
 
-    <!-- Conteneur principal -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!-- Barre d'outils (Toolbar) -->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -22,7 +20,9 @@
             app:title="En Savoir Plus"
             app:navigationIcon="@drawable/menu" />
 
-        <!-- Contenu principal sous la Toolbar -->
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -34,35 +34,35 @@
                 android:id="@+id/text_about"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PowerHome est une application mobile permettant aux résidents d'une résidence participative de suivre et d'optimiser leur consommation énergétique. Grâce à un système de bonus/malus sous forme d'éco-coins, l'application encourage des comportements éco-responsables pour éviter les pics de consommation."
+                android:text="@string/pwrhme_description"
                 android:textSize="16sp"
-                android:textColor="@color/white"
+                android:textColor="@color/silver"
                 android:paddingBottom="16dp" />
 
             <TextView
                 android:id="@+id/text_developers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Développé par :\n• Clémence CARCANADE\n• Nathan GRAJEZYK\n• Esteban LOPES"
+                android:text="@string/dev_by"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="@color/white"
+                android:textColor="@color/silver"
                 android:paddingBottom="16dp" />
 
             <TextView
                 android:id="@+id/text_watermark"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Projet réalisé dans le cadre de l'IUT Paris Rives de Seine - 2025"
+                android:text="@string/project_context"
                 android:textSize="14sp"
                 android:textStyle="italic"
-                android:textColor="@android:color/white"
+                android:textColor="@color/silver"
                 android:gravity="center"
                 android:layout_marginTop="30dp" />
         </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
-    <!-- Menu NavigationView -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
         android:layout_width="wrap_content"
@@ -70,5 +70,5 @@
         android:layout_gravity="start"
         app:menu="@menu/drawer_menu"
         app:headerLayout="@layout/nav_header"
-        android:background="@android:color/white"/>
+        android:background="@color/silver"/>
 </androidx.drawerlayout.widget.DrawerLayout>

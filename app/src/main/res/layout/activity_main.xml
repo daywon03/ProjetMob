@@ -7,26 +7,24 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="16dp"
-    android:background="@drawable/gradient_bg">
+    android:background="@drawable/bckgrnd_pwrhme">
 
-    <!-- Image -->
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="189dp"
-        android:layout_height="186dp"
-        app:srcCompat="@drawable/powerhomewhite"
-        android:layout_marginBottom="16dp" />
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/pwrhme_black" />
 
-    <!-- Bouton -->
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="200dp"
-        android:text="@string/se_connecter"
+        android:text="@string/signin"
+        android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:backgroundTint="@android:color/holo_blue_dark" />
+        android:backgroundTint="@color/silver" />
 
     <Button
         android:id="@+id/button2"
@@ -34,17 +32,19 @@
         android:layout_height="wrap_content"
         android:minWidth="200dp"
         android:text="@string/login"
+        android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:backgroundTint="@android:color/holo_blue_dark" />
+        android:backgroundTint="@color/silver" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="200dp"
-        android:text="Habitats"
+        android:text="@string/home_list"
+        android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:backgroundTint="@android:color/holo_blue_dark" />
+        android:backgroundTint="@color/silver" />
 </LinearLayout>

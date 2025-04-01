@@ -4,15 +4,13 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_bg">
+    android:background="@drawable/bckgrnd_pwrhme">
 
-    <!-- Conteneur principal -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!-- Barre d'outils (Toolbar) -->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -22,7 +20,6 @@
             app:title="Liste des habitats"
             app:navigationIcon="@drawable/menu" />
 
-        <!-- Contenu principal sous la Toolbar -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -30,7 +27,6 @@
             android:gravity="center_horizontal"
             android:padding="16dp">
 
-            <!-- Liste des habitats -->
             <ListView
                 android:id="@+id/habitat_list"
                 android:layout_width="match_parent"
@@ -40,7 +36,6 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Menu NavigationView -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
         android:layout_width="wrap_content"
@@ -48,5 +43,5 @@
         android:layout_gravity="start"
         app:menu="@menu/drawer_menu"
         app:headerLayout="@layout/nav_header"
-        android:background="@android:color/white"/>
+        android:background="@color/silver"/>
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -4,15 +4,13 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_bg">
+    android:background="@drawable/bckgrnd_pwrhme">
 
-    <!-- Conteneur principal -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!-- Barre d'outils (Toolbar) -->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -22,7 +20,6 @@
             app:title="Mon habitat"
             app:navigationIcon="@drawable/menu" />
 
-        <!-- Contenu principal sous la Toolbar -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -34,84 +31,76 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mon habitat"
-                android:textColor="@android:color/white"
+                android:text="@string/my_home"
+                android:textColor="@color/silver"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:layout_marginTop="32dp"/>
 
-            <!-- Conteneur horizontal pour l'icône et l'EditText -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginTop="16dp">
 
-                <!-- Image du mail -->
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="50dp"
                     android:layout_height="40dp"
                     app:srcCompat="@drawable/floor"
-                    app:tint="@android:color/white"/>
+                    app:tint="@color/silver"/>
 
-                <!-- Espacement de 32dp -->
                 <Space
                     android:layout_width="32dp"
                     android:layout_height="1dp" />
 
-                <!-- EditText pour l'étage -->
                 <EditText
                     android:id="@+id/editTextFloor"
                     android:layout_width="276dp"
                     android:layout_height="43dp"
                     android:ems="10"
-                    android:hint="Etage"
+                    android:hint="@string/floor"
                     android:inputType="number"
-                    android:textColor="@android:color/white"
-                    android:textColorHint="@android:color/white"
-                    android:backgroundTint="@android:color/white"/>
+                    android:textColor="@color/silver"
+                    android:textColorHint="@color/silver"
+                    android:backgroundTint="@color/silver"/>
             </LinearLayout>
 
-            <!-- Conteneur horizontal pour l'icône et l'EditText -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginTop="16dp">
 
-                <!-- Image du mail -->
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="50dp"
                     android:layout_height="40dp"
                     app:srcCompat="@drawable/area"
-                    app:tint="@android:color/white"/>
+                    app:tint="@color/silver"/>
 
-                <!-- Espacement de 32dp -->
                 <Space
                     android:layout_width="32dp"
                     android:layout_height="1dp" />
 
-                <!-- EditText pour l'étage -->
                 <EditText
                     android:id="@+id/editTextArea"
                     android:layout_width="276dp"
                     android:layout_height="43dp"
                     android:ems="10"
-                    android:hint="Superficie"
+                    android:hint="@string/space"
                     android:inputType="number"
-                    android:textColor="@android:color/white"
-                    android:textColorHint="@android:color/white"
-                    android:backgroundTint="@android:color/white"/>
+                    android:textColor="@color/silver"
+                    android:textColorHint="@color/silver"
+                    android:backgroundTint="@color/silver"/>
             </LinearLayout>
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mes équipements"
-                android:textColor="@android:color/white"
+                android:text="@string/my_stuff"
+                android:textColor="@color/silver"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:layout_marginTop="32dp"/>
@@ -120,9 +109,9 @@
                 android:id="@+id/button1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@android:color/white"
-                android:textColor="@android:color/holo_blue_dark"
-                android:text="Ajouter un équipement"
+                android:backgroundTint="@color/silver"
+                android:textColor="@color/black"
+                android:text="@string/add_stuff"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:layout_marginTop="32dp"/>
@@ -131,9 +120,9 @@
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@android:color/white"
-                android:textColor="@android:color/holo_blue_dark"
-                android:text="Enregistrer les modifications"
+                android:backgroundTint="@color/silver"
+                android:textColor="@color/black"
+                android:text="@string/save_edits"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:layout_marginTop="32dp"/>

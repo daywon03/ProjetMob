@@ -6,53 +6,47 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:padding="16dp"
-    android:background="@drawable/gradient_bg">
+    android:background="@drawable/bckgrnd_pwrhme">
 
-    <!-- Bouton Retour -->
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/white"
-        android:textColor="@android:color/holo_blue_dark"
-        android:text="@string/retour"
+        android:backgroundTint="@color/silver"
+        android:textColor="@color/black"
+        android:text="@string/back"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_marginTop="32dp"
         android:layout_gravity="start"/>
 
-    <!-- Titre Identifiez-vous -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/identifiez_vous"
-        android:textColor="@android:color/white"
+        android:text="@string/id_yourself"
+        android:textColor="@color/silver"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginTop="32dp"/>
 
-    <!-- Conteneur horizontal pour l'icône et l'EditText -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="16dp">
 
-        <!-- Image du mail -->
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="50dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/baseline_mail_outline_24"
-            app:tint="@android:color/white" />
+            app:tint="@color/silver" />
 
-        <!-- Espacement de 32dp -->
         <Space
             android:layout_width="32dp"
             android:layout_height="1dp" />
 
-        <!-- EditText pour l'email -->
         <EditText
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="276dp"
@@ -60,51 +54,46 @@
             android:ems="10"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
-            android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white"
-            android:backgroundTint="@android:color/white"/>
+            android:textColor="@color/silver"
+            android:textColorHint="@color/silver"
+            android:backgroundTint="@color/silver"/>
     </LinearLayout>
 
-    <!-- Conteneur horizontal pour l'icône et l'EditText -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="16dp">
 
-        <!-- Image du cadenas -->
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="50dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/lock"
-            app:tint="@android:color/white"/>
+            app:tint="@color/silver"/>
 
-        <!-- Espacement de 32dp -->
         <Space
             android:layout_width="32dp"
             android:layout_height="1dp" />
 
-        <!-- EditText pour le mot de passe -->
         <EditText
             android:id="@+id/editTextTextPassword"
             android:layout_width="276dp"
             android:layout_height="43dp"
             android:ems="10"
-            android:hint="@string/mot_de_passe"
+            android:hint="@string/pwd"
             android:inputType="textPassword"
-            android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white"
-            android:backgroundTint="@android:color/white"/>
+            android:textColor="@color/silver"
+            android:textColorHint="@color/silver"
+            android:backgroundTint="@color/silver"/>
     </LinearLayout>
 
-    <!-- Bouton Mot de passe oublié -->
     <Button
         android:id="@+id/button_mdp_oublie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/mot_de_passe_oubli"
-        android:backgroundTint="@android:color/white"
+        android:text="@string/forgot_pwd"
+        android:backgroundTint="@color/silver"
         android:background="?android:selectableItemBackground"
         android:textStyle="bold"
         android:layout_marginTop="16dp"
@@ -112,38 +101,35 @@
         android:padding="8dp"
         android:layout_gravity="end"/>
 
-    <!-- Bouton Se connecter -->
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/white"
-        android:textColor="@android:color/holo_blue_dark"
-        android:text="@string/se_connecter"
+        android:backgroundTint="@color/silver"
+        android:textColor="@color/black"
+        android:text="@string/signin"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_marginTop="32dp" />
 
-    <!-- Bouton Créer un compte -->
     <Button
         android:id="@+id/button_creer_compte"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nouveau sur PowerHome ? Créer un compte"
-        android:backgroundTint="@android:color/white"
+        android:text="@string/new_on_app"
+        android:backgroundTint="@color/silver"
         android:background="?android:selectableItemBackground"
         android:textStyle="bold"
         android:layout_marginTop="32dp"
         android:elevation="2dp"
         android:padding="8dp"/>
 
-    <!-- Texte OU -->
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ou"
-        android:textColor="@android:color/white"
+        android:text="@string/or"
+        android:textColor="@color/silver"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginTop="32dp"/>
@@ -154,7 +140,6 @@
         android:orientation="horizontal"
         android:layout_marginTop="16dp">
 
-        <!-- Image de Facebook -->
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="130dp"
@@ -164,12 +149,10 @@
             android:layout_marginTop="16dp"
             android:layout_gravity="center"/>
 
-        <!-- Espacement -->
         <Space
             android:layout_width="32dp"
             android:layout_height="1dp" />
 
-        <!-- Image de Google -->
         <ImageView
             android:id="@+id/imageView7"
             android:layout_width="80dp"
@@ -178,7 +161,6 @@
             app:srcCompat="@drawable/google_logo"
             android:layout_marginTop="16dp"
             android:layout_gravity="center"/>
-
 
     </LinearLayout>
 

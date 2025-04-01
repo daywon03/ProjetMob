@@ -1,19 +1,30 @@
 <resources>
-    <string name="app_name">ProjetDevMobile</string>
-    <string name="bienvenue_au_studio_ghibli">Welcome to Ghibli Studio!</string>
-    <string name="se_connecter">Sign up</string>
-    <string name="retour">Back</string>
-    <string name="identifiez_vous">Identify yourself</string>
-    <string name="mot_de_passe_oubli">Forgot password ?</string>
-    <string name="nouveau_sur_studio_ghibli_cr_er_un_compte">New to Ghibli Studio? Create account</string>
-    <string name="ou">OR</string>
-    <string name="mot_de_passe">Password</string>
+    <string name="app_name" translatable="false">ProjetDevMobile</string>
+    <string name="signin">Se connecter</string>
+    <string name="back">Retour</string>
+    <string name="id_yourself">Identifiez-vous</string>
+    <string name="forgot_pwd">Mot de passe oublié ?</string>
+    <string name="or">OU</string>
+    <string name="pwd">Mot de passe</string>
     <string name="email">Email</string>
-    <string name="login">Login</string>
-    <string name="inscrivez_vous">Register yourself</string>
-    <string name="name">Name</string>
-    <string name="d_j_sur_studio_ghibli_se_connecter">Already on Studio Ghibli ? Connect</string>
-    <string name="t_l_phone">Phone</string>
-    <string name="pr_nom">Surname</string>
-    <string name="characters">Characters</string>
+    <string name="login">S\'inscrire</string>
+    <string name="signup">Inscrivez-vous</string>
+    <string name="firstname">Nom</string>
+    <string name="phone">Téléphone</string>
+    <string name="name">Prénom</string>
+    <string name="new_on_app">Nouveau sur PowerHome ? Créer un compte</string>
+    <string name="pwrhme_description">PowerHome est une appli mobile pour les habitants de résidences partagées, qui aide à gérer et limiter leur consommation d’énergie. Un système de points verts motive des habitudes durables et prévient les surconsommations.</string>
+    <string name="dev_by">Développé par : • Aron DESCARPENTRIES • Damon Ba • Juliette Cournon</string>
+    <string name="project_context">Projet réalisé dans le cadre de la ressource de développement mobile de l\'IUT Paris Rives de Seine - 2025</string>
+    <string name="already_on_pwrhme">Déjà sur PowerHome ? Se connecter</string>
+    <string name="save_edits">Enregistrer les modifications</string>
+    <string name="add_stuff">Ajouter un équipement</string>
+    <string name="my_stuff">Mes équipements</string>
+    <string name="space">Superficie</string>
+    <string name="floor">Etage</string>
+    <string name="my_home">Mon habitat</string>
+    <string name="home_list">Liste des habitats</string>
+    <string name="calendar">Calendrier</string>
+    <string name="infos">En savoir plus</string>
+    <string name="profil">Profil</string>
 </resources>
