@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.code.gson:gson:2.12.1" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.google.code.gson" artifactId="gson" version="2.12.1" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.12.1/4e773a317740b83b43cfc3d652962856041697cb/gson-2.12.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.12.1/ae6f0c773c1783ef8e19baf7d08a9274acf77e34/gson-2.12.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.12.1/972f179bba0f90faccce3873e2f0633a3f0f7d02/gson-2.12.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
