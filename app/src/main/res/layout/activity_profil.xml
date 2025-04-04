@@ -186,7 +186,7 @@
                 android:text="@string/save_edits"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:layout_marginTop="32dp"/>
+                android:layout_marginTop="280dp"/>
         </LinearLayout>
     </LinearLayout>
 

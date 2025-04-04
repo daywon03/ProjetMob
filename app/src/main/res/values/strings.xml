@@ -14,7 +14,7 @@
     <string name="name">Prénom</string>
     <string name="new_on_app">Nouveau sur PowerHome ? Créer un compte</string>
     <string name="pwrhme_description">PowerHome est une appli mobile pour les habitants de résidences partagées, qui aide à gérer et limiter leur consommation d’énergie. Un système de points verts motive des habitudes durables et prévient les surconsommations.</string>
-    <string name="dev_by">Développé par : • Aron DESCARPENTRIES • Damon Ba • Juliette Cournon</string>
+    <string name="dev_by">Développé par :\n • Aron DESCARPENTRIES\n • Damon Ba\n • Juliette Cournon\n</string>
     <string name="project_context">Projet réalisé dans le cadre de la ressource de développement mobile de l\'IUT Paris Rives de Seine - 2025</string>
     <string name="already_on_pwrhme">Déjà sur PowerHome ? Se connecter</string>
     <string name="save_edits">Enregistrer les modifications</string>
@@ -27,4 +27,6 @@
     <string name="calendar">Calendrier</string>
     <string name="infos">En savoir plus</string>
     <string name="profil">Profil</string>
+    <string name="more_work">Avec plus de temps nous aurions aimé ajouté une visualisation des consommations sous formes de courbes/graphiques accédable depuis le menu.\n</string>
+    <string name="more_work_label">Avec plus de temps...</string>
 </resources>

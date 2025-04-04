@@ -33,19 +33,16 @@ public class HabitatActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // Ajouter l'icône hamburger
         toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, 0, 0);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-        // Gestion des clics sur les éléments du menu
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
 
                 if (id == R.id.nav_profil) {
-                    // Rediriger vers l'Activity Profil
                     Intent intent = new Intent(HabitatActivity.this, ProfilActivity.class);
                     startActivity(intent);
                 }
@@ -54,7 +51,6 @@ public class HabitatActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 else if (id == R.id.nav_habitats) {
-                    //On ferme
                 }
                 else if (id == R.id.nav_reservation) {
                     Intent intent = new Intent(HabitatActivity.this, ReservationActivity.class);
@@ -70,13 +66,11 @@ public class HabitatActivity extends AppCompatActivity {
             }
         });
 
-        // Initialiser la liste des habitats
         ListView listView = findViewById(R.id.habitat_list);
         List<Habitat> habitats = getHabitats();
         HabitatAdapter adapter = new HabitatAdapter(this, habitats);
         listView.setAdapter(adapter);
 
-        // Ajouter un OnItemClickListener pour afficher un Toast
         listView.setOnItemClickListener((parent, view, position, id) -> {
             Habitat selectedHabitat = (Habitat) parent.getItemAtPosition(position);
             String userName = selectedHabitat.getUser();
@@ -86,11 +80,11 @@ public class HabitatActivity extends AppCompatActivity {
 
     private List<Habitat> getHabitats() {
         return Arrays.asList(
-                new Habitat("Alice Dutronc", 2, Arrays.asList("Fer à repasser", "Machine à laver")),
-                new Habitat("Marc Dupont", 5, Arrays.asList("Réfrigérateur", "Four", "Lave-vaisselle")),
-                new Habitat("Sophie Martin", 3, Arrays.asList("Aspirateur", "Télévision", "Climatiseur")),
-                new Habitat("Jean Lefevre", 1, Arrays.asList("Chauffage", "Robot de cuisine")),
-                new Habitat("Laura Dubois", 4, Arrays.asList("Micro-ondes", "Radio", "Éclairage connecté"))
+                new Habitat("Juliette Cournon", 2, Arrays.asList("Réfrigérateur", "Machine à laver")),
+                new Habitat("Cyrille Lebeaupin", 5, Arrays.asList("Centrale vapeur", "Four", "Lave-vaisselle")),
+                new Habitat("Etienne Labrot", 3, Arrays.asList("Cafetière", "Télévision", "Climatiseur")),
+                new Habitat("Damon Ba", 1, Arrays.asList("Chauffage", "Robot de cuisine")),
+                new Habitat("Aron Descarpentries", 4, Arrays.asList("Micro-ondes", "Radio", "Plaques de cuisson"))
         );
     }
 }

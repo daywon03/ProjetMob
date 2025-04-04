@@ -14,7 +14,7 @@
     <string name="name">Surname</string>
     <string name="new_on_app">New to PowerHome ? Sign up</string>
     <string name="pwrhme_description">PowerHome is a mobile app for residents of shared housing that helps manage and reduce their energy consumption. A green points system encourages sustainable habits and prevents overconsumption.</string>
-    <string name="dev_by">Developed by : • Aron DESCARPENTRIES • Damon Ba • Juliette Cournon</string>
+    <string name="dev_by">Developed by :\n • Aron DESCARPENTRIES\n • Damon Ba\n • Juliette Cournon\n</string>
     <string name="profil">Profil</string>
     <string name="project_context">"Project carried out as part of the mobile development course at IUT Paris Rives de Seine – 2025  "</string>
     <string name="already_on_pwrhme">Already on PowerHome ? Sign in</string>
@@ -27,4 +27,6 @@
     <string name="home_list">List of homes</string>
     <string name="calendar">Calendar</string>
     <string name="infos">Learn more</string>
+    <string name="more_work">Avec plus de temps nous aurions aimé ajouté une visualisation des consommations sous formes de courbes/graphiques accédable depuis le menu.\n</string>
+    <string name="more_work_label">Avec plus de temps...</string>
 </resources>

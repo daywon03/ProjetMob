@@ -13,7 +13,7 @@
     <string name="name">Apellido</string>
     <string name="new_on_app">¿Nuevo en PowerHome? Crea una cuenta</string>
     <string name="pwrhme_description">PowerHome est une application mobile permettant aux résidents d\'une résidence participative de suivre et d\'optimiser leur consommation énergétique. Grâce à un système de bonus/malus sous forme d\'éco-coins, l\'application encourage des comportements éco-responsables pour éviter les pics de consommation.</string>
-    <string name="dev_by">Desarrollado por : • Aron DESCARPENTRIES • Damon Ba • Juliette Cournon</string>
+    <string name="dev_by">Desarrollado por :\n • Aron DESCARPENTRIES\n • Damon Ba\n • Juliette Cournon</string>
     <string name="project_context">Proyecto realizado en el marco del curso de desarrollo móvil del IUT Paris Rives de Seine – 2025</string>
     <string name="already_on_pwrhme">¿Ya estás en PowerHome? Inicia sesión</string>
     <string name="save_edits">Guardar los cambios</string>
@@ -26,4 +26,6 @@
     <string name="calendar">Calendario</string>
     <string name="infos">Saber más</string>
     <string name="profil">Perfil</string>
+    <string name="more_work">Avec plus de temps nous aurions aimé ajouté une visualisation des consommations sous formes de courbes/graphiques accédable depuis le menu.\n</string>
+    <string name="more_work_label">Avec plus de temps...</string>
 </resources>

@@ -24,6 +24,7 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:layout_marginTop="310dp"
         android:backgroundTint="@color/silver" />
 
     <Button
@@ -46,5 +47,6 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:backgroundTint="@color/silver" />
+        android:backgroundTint="@color/silver"
+        android:visibility="invisible"/>
 </LinearLayout>

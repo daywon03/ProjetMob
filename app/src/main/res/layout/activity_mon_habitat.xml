@@ -95,27 +95,6 @@
                     android:backgroundTint="@color/silver"/>
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/my_stuff"
-                android:textColor="@color/silver"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:layout_marginTop="32dp"/>
-
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/silver"
-                android:textColor="@color/black"
-                android:text="@string/add_stuff"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_marginTop="32dp"/>
-
             <Button
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
@@ -125,7 +104,7 @@
                 android:text="@string/save_edits"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:layout_marginTop="32dp"/>
+                android:layout_marginTop="390dp"/>
         </LinearLayout>
     </LinearLayout>
 

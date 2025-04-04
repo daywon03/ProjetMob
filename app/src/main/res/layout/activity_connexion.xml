@@ -110,7 +110,7 @@
         android:text="@string/signin"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginTop="32dp" />
+        android:layout_marginTop="270dp" />
 
     <Button
         android:id="@+id/button_creer_compte"
@@ -120,48 +120,8 @@
         android:backgroundTint="@color/silver"
         android:background="?android:selectableItemBackground"
         android:textStyle="bold"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="10dp"
         android:elevation="2dp"
         android:padding="8dp"/>
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/or"
-        android:textColor="@color/silver"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginTop="32dp"/>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="16dp">
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@mipmap/img_facebook_foreground"
-            android:layout_marginTop="16dp"
-            android:layout_gravity="center"/>
-
-        <Space
-            android:layout_width="32dp"
-            android:layout_height="1dp" />
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/google_logo"
-            android:layout_marginTop="16dp"
-            android:layout_gravity="center"/>
-
-    </LinearLayout>
 
 </LinearLayout>
