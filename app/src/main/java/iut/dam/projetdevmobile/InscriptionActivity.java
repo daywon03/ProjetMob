@@ -24,11 +24,11 @@ import java.util.regex.Pattern;
 
 public class InscriptionActivity extends AppCompatActivity {
 
-    private EditText editTextName, editTextSurname, editTextMail, editTextPassword;
+    private EditText editTextName, editTextSurname, editTextMail, editTextPassword, editPhoneNumber;
     private Spinner spinnerCountryCode;
     private Button btnInscription;
     private ProgressDialog pDialog;
-    private static final String REGISTER_URL = "http://10.0.2.2:8888/powerhome_server/register.php"; // URL de l'inscription
+    private static final String REGISTER_URL = "http://10.0.2.2:8888/powerhome_server/register.php"; // URL d'inscription
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,7 @@ public class InscriptionActivity extends AppCompatActivity {
         editTextSurname = findViewById(R.id.editTextSurname);
         editTextMail = findViewById(R.id.editTextTextEmailAddress);
         editTextPassword = findViewById(R.id.editTextTextPassword);
+        editPhoneNumber = findViewById(R.id.editTextPhone);
         spinnerCountryCode = findViewById(R.id.spinnerCountryCode);
         btnInscription = findViewById(R.id.button3);
 
@@ -52,10 +53,11 @@ public class InscriptionActivity extends AppCompatActivity {
             String surname = editTextSurname.getText().toString().trim();
             String mail = editTextMail.getText().toString().trim();
             String password = editTextPassword.getText().toString().trim();
+            String phone = editPhoneNumber.getText().toString().trim();
 
             // Validation des champs
-            if (validateInputs(name, surname, mail, password)) {
-                registerUser(name, surname, mail, password);
+            if (validateInputs(name, surname, mail, phone ,password)) {
+                registerUser(name, surname, mail,phone, password);
             }
         });
 
@@ -76,10 +78,11 @@ public class InscriptionActivity extends AppCompatActivity {
     }
 
     // Validation des entrées
-    private boolean validateInputs(String name, String surname, String email, String password) {
+    private boolean validateInputs(String name, String surname, String email,String phone, String password) {
         String nameRegex = "^[A-Za-zÀ-ÖØ-öø-ÿ]{2,25}$"; // Vérification du nom
         String emailRegex = Patterns.EMAIL_ADDRESS.pattern(); // Vérification de l'email
         String passwordRegex = "^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$"; // Vérification du mot de passe
+        String phoneNumber = editPhoneNumber.getText().toString().trim();
 
         if (!Pattern.matches(nameRegex, name)) {
             editTextName.setError("Le prénom doit être alphabétique (2-25 lettres)");
@@ -97,27 +100,31 @@ public class InscriptionActivity extends AppCompatActivity {
             editTextPassword.setError("Le mot de passe doit contenir au moins 8 caractères, une lettre, un chiffre et un symbole");
             return false;
         }
+        if (phoneNumber.isEmpty()) {
+            editPhoneNumber.setError("Numéro de téléphone requis");
+            return false;
+        }
         return true;
     }
 
     // Envoi des données d'inscription à l'API
-    private void registerUser(String name, String surname, String email, String password) {
+    private void registerUser(String name, String surname, String email,String phone, String password) {
         pDialog = new ProgressDialog(this);
         pDialog.setMessage("Inscription en cours...");
         pDialog.setIndeterminate(true);
         pDialog.setCancelable(false);
         pDialog.show();
 
-        String phone = spinnerCountryCode.getSelectedItem().toString() + "123456789"; // Exemple de numéro de téléphone
+        String phoneNumb = spinnerCountryCode.getSelectedItem().toString() + phone; // Exemple de numéro de téléphone
 
         // Création de l'objet JSON
         JsonObject json = new JsonObject();
-        json.addProperty("name", name);
-        json.addProperty("surname", surname);
-        json.addProperty("email", email);
-        json.addProperty("password", password);
-        json.addProperty("phone", phone); // Ajouter un numéro de téléphone
-        json.addProperty("address", ""); // Adresse vide (à compléter si nécessaire)
+        json.addProperty("firstname", name);  // Envoi du prénom
+        json.addProperty("lastname", surname); // Envoi du nom
+        json.addProperty("email", email); // Envoi de l'email
+        json.addProperty("password", password); // Envoi du mot de passe
+        json.addProperty("phone", phoneNumb); // Ajouter un numéro de téléphone
+        json.addProperty("address", ""); // Adresse vide pour l’instant (à compléter si nécessaire)
 
         // Envoi de la requête POST avec Ion
         Ion.with(this)
@@ -136,10 +143,12 @@ public class InscriptionActivity extends AppCompatActivity {
                         try {
                             JSONObject response = new JSONObject(result);
                             if (response.has("message")) {
+                                // Inscription réussie
                                 Toast.makeText(InscriptionActivity.this, response.getString("message"), Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(InscriptionActivity.this, MainActivity.class);
                                 startActivity(intent);
                             } else {
+                                // Erreur lors de l'inscription
                                 Toast.makeText(InscriptionActivity.this, "Erreur création : " + response.getString("error"), Toast.LENGTH_SHORT).show();
                             }
                         } catch (JSONException ex) {
@@ -147,5 +156,10 @@ public class InscriptionActivity extends AppCompatActivity {
                         }
                     }
                 });
+    }
+
+    public void gotoconnexion(View view) {
+        Intent intent = new Intent(this, ConnexionActivity.class);
+        startActivity(intent);
     }
 }
